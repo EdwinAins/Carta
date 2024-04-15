@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mensaje secreto</title>
+   
+</head>
+<body>
+    <audio playsinline controls >
+        <source src="idea22.mp3" type="audio/mpeg">
+    </audio>
+    <style>
+        
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 50px;
+    
+}
+
+.cursor {
+    height: 200px;
+    width: 200px;
+    background-color: #ff9398;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+    </style>
+
+    <h2>Para tí,</h2>
+
+    <p> Quería tomarme un momento para expresarte algo que he estado pensando últimamente. Desde que te conocí, he sentido una conexión especial contigo, y quiero que sepas que me gustas mucho.
+
+        Tu presencia ilumina mi día y tus palabras siempre encuentran un camino para alegrarme. Admiro [menciona alguna cualidad que te gusta de esa persona, como su sentido del humor, su bondad, etc.] y creo que eres una persona realmente especial.
+        
+        No estoy seguro/a de cómo te sientes al respecto, pero quería ser honesto/a contigo y compartir mis sentimientos. Si sientes lo mismo, me encantaría conocerte mejor y pasar más tiempo juntos/as. Y si no, por supuesto, respeto tu respuesta y nuestra amistad seguirá siendo valiosa para mí.
+        
+        Espero que este mensaje no te haga sentir incómodo/a de ninguna manera. Simplemente quería ser sincero/a contigo sobre lo que siento.</p>
+
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector(".cursor");
+     window.addEventListener("mousemove", function(e){
+    cursor.style.left = (e.x-100)+"px";
+    cursor.style.top = (e.y-100)+"px";
+})
+    </script>
+
+  
+    
+</body>
+</html>
